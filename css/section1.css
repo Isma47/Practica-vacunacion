@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-logo__nav {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #5465ff;
+}
+.header-logo__nav .header-logo {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.header-logo__nav .header-navbar {
+  min-width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+.header-logo__nav .header-navbar a {
+  transition: all 1s;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.header-logo__nav .header-navbar a:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .header-logo__nav {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #5465ff;
+  }
+  .header-logo__nav .header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 2% 0%;
+  }
+}
+.main-vacunarse {
+  max-width: 100%;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title-info__vacunacion,
+.photo-vacunacion {
+  max-width: 50%;
+}
+
+.title-info__vacunacion {
+  display: flex;
+  align-items: center;
+  justify-content: center¡¡¡;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+.title-info__vacunacion h1 {
+  transition: all 2s;
+  margin-bottom: 5%;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.title-info__vacunacion h1:hover {
+  color: #5465ff;
+}
+.title-info__vacunacion p {
+  max-width: 90%;
+  font-size: 1.1rem;
+  font-family: Arial;
+}
+.title-info__vacunacion .info-proteccionvacuna {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 80%;
+  margin-top: 5%;
+}
+.title-info__vacunacion .info-proteccionvacuna span {
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.title-info__vacunacion .info-proteccionvacuna span img {
+  width: 1.1rem;
+}
+.title-info__vacunacion .info-proteccionvacuna span a {
+  font-size: 0.9rem;
+}
+.title-info__vacunacion img {
+  width: 3%;
+  margin-top: 2%;
+}
+.title-info__vacunacion a {
+  color: #5465ff;
+  transition: all 2s;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.title-info__vacunacion a:hover {
+  color: #000000;
+}
+
+.recomendacion-sede {
+  position: absolute;
+  left: 8%;
+  top: 75%;
+  background-color: #9bb1ff;
+  border-radius: 20px;
+  padding: 1.2%;
+}
+.recomendacion-sede span {
+  color: #ffffff;
+}
+.recomendacion-sede form label {
+  color: #ffffff;
+}
+.recomendacion-sede form select {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.recomendacion-sede form select option {
+  background-color: #5465ff;
+}
+.recomendacion-sede form .fecha-form {
+  background-color: #9bb1ff;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .main-vacunarse {
+    max-width: 100%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main-vacunarse .title-info__vacunacion,
+.main-vacunarse .photo-vacunacion {
+    max-width: 100%;
+  }
+  .main-vacunarse .title-info__vacunacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main-vacunarse .title-info__vacunacion h1 {
+    margin-left: 5%;
+    font-size: 1.5rem;
+  }
+  .main-vacunarse .title-info__vacunacion h1 p {
+    max-width: 100%;
+    font-size: 0.8rem;
+    font-family: Arial;
+  }
+  .info-proteccionvacuna {
+    min-width: 100%;
+    margin-top: 2%;
+  }
+  .info-proteccionvacuna span {
+    min-width: 100%;
+  }
+  .photo-vacunacion {
+    max-width: 100%;
+  }
+  .photo-vacunacion img {
+    margin-top: 2%;
+    max-width: 100%;
+  }
+  .recomendacion-sede {
+    margin-top: 5%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: static;
+    min-width: 90%;
+  }
+  .recomendacion-sede label, .recomendacion-sede select {
+    margin: 2% 0;
+  }
+  .recomendacion-sede label {
+    color: #000000;
+  }
+  .recomendacion-sede form {
+    min-width: 100%;
+    margin-top: 2%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .recomendacion-sede form select option {
+    font-size: 0.6rem;
+    background-color: #5465ff;
+  }
+  .recomendacion-sede form .fecha-form {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+/*# sourceMappingURL=section1.css.map */

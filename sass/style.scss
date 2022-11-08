@@ -1,0 +1,16 @@
+//Estilos generales
+@use './generales';
+//Header
+@use './layout/header';
+
+//Main
+//Primera seccion del main
+@use './layout/section1';
+//Segunda seccion del main
+@use './layout/section2';
+//Tercera seccion del main
+@use './../sass/layout/section3';
+//Cuarta seccion del main
+@use './layout/section4';
+//Footer
+@use './layout/footer';

@@ -1,0 +1,65 @@
+@use './../abstracs/mixins' as *;
+@use './../abstracs/variables' as *;
+
+.preparativos-vacuna {
+    @include flex (flex, none, space-around, row, nowrap);
+    max-width: 90%;
+    margin: 10% auto;
+    //Photo de la derecha
+    .photo-preparativos {
+        max-width: 50%;
+        img {
+            max-width: 100%;
+        }
+    }
+    .preparativos-vacuna__info {
+        @include flex (flex, center, center, column, wrap);
+        max-width: 45%;
+        
+        h2 {
+            color: $color-1;
+            margin-bottom: 2%;
+            font: {
+                size: 2.7rem;
+            }
+        }
+    }
+
+    .preparativos-restricciones {
+        min-width: 100%;
+
+        ul {
+            li {
+                color: $color-1;
+                list-style: none;
+                margin-top: 2%;
+                font:{
+                    size: 1.1rem;
+                    weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    //Inicio de la tercera seccion
+    .preparativos-vacuna {
+        @include flex (flex, center, none, column, wrap);
+        max-width: 100%;
+        margin: none;
+
+        .photo-preparativos {
+            max-width: 100%;
+        }
+
+        .preparativos-vacuna__info {
+            @include flex (flex, center, center, column, wrap);
+            max-width: 90%;
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

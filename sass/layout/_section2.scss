@@ -1,0 +1,96 @@
+@use './../abstracs/mixins' as *;
+@use './../abstracs/variables' as *;
+
+//Inicio section 2
+.section2-info__vacunas {
+    max-width: 100%;
+    margin-top: 10%;
+    @include flex(flex, center, center, column, wrap);
+}
+
+//Titulos e informacion de las vacunas y beneficios
+.info-vacunas {
+    max-width: 60%;
+    margin: 5% 0;
+
+    h2 {
+        color: $color-1;
+        font-size: 2.5rem;
+        margin-bottom: 2%;
+    }
+
+    p {
+        max-width: 85%;
+
+        font: {
+            size: .9rem;
+            weight: bolder;
+        }
+    }
+}
+
+//Beneficios para vacunarse 
+
+.flex-beneficios__info {
+    max-width: 90%;
+    @include flex(flex, stretch, center, none, none);
+
+    .beneficio {
+        max-width: 25%;
+        margin-left: 5%;
+
+        img {
+            display: flex2;
+            margin: auto;
+        }
+
+        h2 {
+            color: $color-1;
+            margin: 7% 0;
+            text-align: center;
+        }
+
+        p {
+            font: {
+                size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    //Inicio del section 2
+    .section2-info__vacunas {
+        max-width: 100%;
+
+
+        .info-vacunas {
+            max-width: 90%;
+            margin: 5% 0;
+        }
+
+        .flex-beneficios__info {
+            @include flex (flex, center, none, column, wrap);
+
+            .beneficio {
+                max-width: 90%;
+                margin: 2% 0;
+                text-align: center;
+
+                img {
+                    display: flex;
+                    width: 7%;
+                }
+
+                h2 {
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

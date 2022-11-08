@@ -1,0 +1,237 @@
+@use "./../abstracs/mixins" as *;
+@use "./../abstracs/variables" as *;
+
+//Inicio del primer section
+.main-vacunarse {
+    max-width: 100%;
+    margin-top: 3%;
+    @include flex(flex, center, center, row, wrap);
+}
+
+//Parte informacion e imagen
+
+.title-info__vacunacion,
+.photo-vacunacion {
+    max-width: 50%;
+}
+
+//informaciòn
+.title-info__vacunacion {
+    @include flex(flex, center, center¡¡¡, column, wrap);
+    position: relative;
+
+    //Titulo
+    h1 {
+        transition: all 2s;
+        margin-bottom: 5%;
+
+        font: {
+            size: 2.5rem;
+            weight: bolder;
+        }
+
+        &:hover {
+            color: $color-1;
+        }
+    }
+
+    //Informacion del porque vacunarse
+    p {
+        max-width: 90%;
+
+        font: {
+            size: 1.1rem;
+            family: Arial;
+        }
+    }
+
+    .info-proteccionvacuna {
+        @include flex(flex, center, space-between, row, wrap);
+        min-width: 80%;
+        margin-top: 5%;
+
+        span {
+            min-width: 50%;
+            @include flex(flex, center, center, row, nowrap);
+
+            img {
+                width: 1.1rem;
+            }
+
+            a {
+                font: {
+                    size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    //lado derecho del section
+
+    img {
+        width: 3%;
+        margin-top: 2%;
+    }
+
+    a {
+        color: $color-1;
+        transition: all 2s;
+
+        font: {
+            weight: bold;
+            size: 1.1rem;
+        }
+
+        &:hover {
+            color: $colornegro;
+        }
+    }
+}
+
+//recomendacion de la vacuna
+
+.recomendacion-sede {
+    position: absolute;
+    left: 8%;
+    top: 75%;
+    background-color: $color-3;
+    border-radius: 20px;
+    padding: 1.2%;
+
+    span {
+        color: $colorblanco;
+    }
+
+    form {
+        label {
+            color: $colorblanco;
+        }
+
+        //formulario de opciones
+        select {
+            border: none;
+            background-color: transparent;
+            color: $colorblanco;
+
+            font: {
+                size: 1rem;
+                weight: bold;
+            }
+
+            option {
+                background-color: $color-1;
+            }
+        }
+
+        //Fomrulario de fechas
+        .fecha-form {
+            background-color: $color-3;
+            border: none;
+            color: $colorblanco;
+
+            font: {
+                size: 1rem;
+                weight: bold;
+            }
+        }
+    }
+}
+
+//Version mobile
+
+@media screen and (max-width: 600px) {
+
+    //Inicio del section 1
+    .main-vacunarse {
+        max-width: 100%;
+        margin-top: 3%;
+        @include flex(flex, center, center, column, wrap);
+
+        //Estilos maximo cada caja
+        .title-info__vacunacion,
+        .photo-vacunacion {
+            max-width: 100%;
+        }
+
+        //Informacion sobre la vacunacon
+        .title-info__vacunacion {
+            @include flex(flex, center, center, column, wrap);
+
+            //Titulo
+            h1 {
+                margin-left: 5%;
+                font: {
+                    size: 1.5rem;
+
+                }
+
+                //Informacion del porque vacunarse
+                p {
+                    max-width: 100%;
+
+                    font: {
+                        size: .8rem;
+                        family: Arial;
+                    }
+                }
+            }
+        }
+    }
+
+    .info-proteccionvacuna {
+        min-width: 100%;
+        margin-top: 2%;
+
+        span {
+            min-width: 100%;
+        }
+    }
+
+    .photo-vacunacion {
+        max-width: 100%;
+        img {
+            margin-top: 2%;
+            max-width: 100%;
+        }
+    }
+
+    //Recomendscion sede
+
+    .recomendacion-sede {
+        margin-top: 5%;
+        @include flex(flex, start, center, column, nowrap);
+        position: static;
+        min-width: 90%;
+
+        label, select {
+            margin: 2% 0;
+        }
+
+        label {
+            color: $colornegro;
+        }
+        
+        form {
+            min-width: 100%;
+            margin-top: 2%;
+            @include flex(flex, start, center, column, wrap);
+            //formulario de opciones
+            select {
+                option {
+                    font-size: .6rem;
+                    background-color: $color-1;
+                }
+            }
+    
+            //Fomrulario de fechas
+            .fecha-form {
+                font: {
+                    size: 1.5rem;
+                    weight: bold;
+                }
+            }
+        }
+     }
+
+       
+    }

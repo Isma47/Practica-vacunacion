@@ -1,0 +1,46 @@
+@use './../abstracs/mixins' as *;
+@use './../abstracs/variables' as *;
+
+.footer-vacunacion {
+    display: grid;
+    margin-top: 5%;
+    max-width: 100%;
+    background-color: $color-1;
+    color: $colorblanco;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "logo-info__extra soporte-footer"
+        "derechos      derechos";
+    .logo-info__extra {
+        
+        grid-area: logo-info__extra;
+
+        h3 {
+            font: {
+                size: 1.5rem;
+                weight: bolder;
+            }
+        }
+        
+    }
+    .soporte-footer {
+        grid-area: soporte-footer;
+        h2 {
+            font:{
+                size:1.5rem;
+                weight: bolder;
+            }
+        }
+        a {
+            color: $colorblanco;
+            font-size: .9rem;
+        }
+    }
+
+    .derechos{
+        max-width: 100%;
+        grid-area: derechos;
+        @include flex(flex, center, space-around, row, wrap);
+    }
+}
+

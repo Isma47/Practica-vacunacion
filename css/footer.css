@@ -1,0 +1,532 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-logo__nav {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #5465ff;
+}
+.header-logo__nav .header-logo {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.header-logo__nav .header-navbar {
+  min-width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+.header-logo__nav .header-navbar a {
+  transition: all 1s;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.header-logo__nav .header-navbar a:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .header-logo__nav {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #5465ff;
+  }
+  .header-logo__nav .header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 2% 0%;
+  }
+}
+.main-vacunarse {
+  max-width: 100%;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title-info__vacunacion,
+.photo-vacunacion {
+  max-width: 50%;
+}
+
+.title-info__vacunacion {
+  display: flex;
+  align-items: center;
+  justify-content: center¡¡¡;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+.title-info__vacunacion h1 {
+  transition: all 2s;
+  margin-bottom: 5%;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.title-info__vacunacion h1:hover {
+  color: #5465ff;
+}
+.title-info__vacunacion p {
+  max-width: 90%;
+  font-size: 1.1rem;
+  font-family: Arial;
+}
+.title-info__vacunacion .info-proteccionvacuna {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 80%;
+  margin-top: 5%;
+}
+.title-info__vacunacion .info-proteccionvacuna span {
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.title-info__vacunacion .info-proteccionvacuna span img {
+  width: 1.1rem;
+}
+.title-info__vacunacion .info-proteccionvacuna span a {
+  font-size: 0.9rem;
+}
+.title-info__vacunacion img {
+  width: 3%;
+  margin-top: 2%;
+}
+.title-info__vacunacion a {
+  color: #5465ff;
+  transition: all 2s;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.title-info__vacunacion a:hover {
+  color: #000000;
+}
+
+.recomendacion-sede {
+  position: absolute;
+  left: 8%;
+  top: 75%;
+  background-color: #9bb1ff;
+  border-radius: 20px;
+  padding: 1.2%;
+}
+.recomendacion-sede span {
+  color: #ffffff;
+}
+.recomendacion-sede form label {
+  color: #ffffff;
+}
+.recomendacion-sede form select {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.recomendacion-sede form select option {
+  background-color: #5465ff;
+}
+.recomendacion-sede form .fecha-form {
+  background-color: #9bb1ff;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .main-vacunarse {
+    max-width: 100%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main-vacunarse .title-info__vacunacion,
+.main-vacunarse .photo-vacunacion {
+    max-width: 100%;
+  }
+  .main-vacunarse .title-info__vacunacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main-vacunarse .title-info__vacunacion h1 {
+    margin-left: 5%;
+    font-size: 1.5rem;
+  }
+  .main-vacunarse .title-info__vacunacion h1 p {
+    max-width: 100%;
+    font-size: 0.8rem;
+    font-family: Arial;
+  }
+  .info-proteccionvacuna {
+    min-width: 100%;
+    margin-top: 2%;
+  }
+  .info-proteccionvacuna span {
+    min-width: 100%;
+  }
+  .photo-vacunacion {
+    max-width: 100%;
+  }
+  .photo-vacunacion img {
+    margin-top: 2%;
+    max-width: 100%;
+  }
+  .recomendacion-sede {
+    margin-top: 5%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: static;
+    min-width: 90%;
+  }
+  .recomendacion-sede label, .recomendacion-sede select {
+    margin: 2% 0;
+  }
+  .recomendacion-sede label {
+    color: #000000;
+  }
+  .recomendacion-sede form {
+    min-width: 100%;
+    margin-top: 2%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .recomendacion-sede form select option {
+    font-size: 0.6rem;
+    background-color: #5465ff;
+  }
+  .recomendacion-sede form .fecha-form {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+.section2-info__vacunas {
+  max-width: 100%;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.info-vacunas {
+  max-width: 60%;
+  margin: 5% 0;
+}
+.info-vacunas h2 {
+  color: #5465ff;
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.info-vacunas p {
+  max-width: 85%;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.flex-beneficios__info {
+  max-width: 90%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: none;
+  flex-wrap: none;
+}
+.flex-beneficios__info .beneficio {
+  max-width: 25%;
+  margin-left: 5%;
+}
+.flex-beneficios__info .beneficio img {
+  display: flex2;
+  margin: auto;
+}
+.flex-beneficios__info .beneficio h2 {
+  color: #5465ff;
+  margin: 7% 0;
+  text-align: center;
+}
+.flex-beneficios__info .beneficio p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section2-info__vacunas {
+    max-width: 100%;
+  }
+  .section2-info__vacunas .flex-beneficios__info {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section2-info__vacunas .flex-beneficios__info .beneficio {
+    max-width: 90%;
+    margin: 2% 0;
+    text-align: center;
+  }
+  .section2-info__vacunas .flex-beneficios__info .beneficio img {
+    display: flex;
+    width: 7%;
+  }
+  .section2-info__vacunas .flex-beneficios__info .beneficio h2 {
+    font-size: 1.3rem;
+  }
+  .section2-info__vacunas .flex-beneficios__info .beneficio p {
+    font-size: 1rem;
+  }
+}
+.preparativos-vacuna {
+  display: flex;
+  align-items: none;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 90%;
+  margin: 10% auto;
+}
+.preparativos-vacuna .photo-preparativos {
+  max-width: 50%;
+}
+.preparativos-vacuna .photo-preparativos img {
+  max-width: 100%;
+}
+.preparativos-vacuna .preparativos-vacuna__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 45%;
+}
+.preparativos-vacuna .preparativos-vacuna__info h2 {
+  color: #5465ff;
+  margin-bottom: 2%;
+  font-size: 2.7rem;
+}
+.preparativos-vacuna .preparativos-restricciones {
+  min-width: 100%;
+}
+.preparativos-vacuna .preparativos-restricciones ul li {
+  color: #5465ff;
+  list-style: none;
+  margin-top: 2%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .preparativos-vacuna {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: none;
+  }
+  .preparativos-vacuna .photo-preparativos {
+    max-width: 100%;
+  }
+  .preparativos-vacuna .preparativos-vacuna__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+  .preparativos-vacuna .preparativos-vacuna__info h2 {
+    font-size: 2rem;
+  }
+}
+.contacto-vacunas {
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "emergencia-title emergencia-title" "grid-formas__contacto photo-contacto";
+}
+.contacto-vacunas .emergencia-title {
+  grid-area: emergencia-title;
+  max-width: 45%;
+  text-align: left;
+}
+.contacto-vacunas .emergencia-title h2 {
+  color: #5465ff;
+}
+.contacto-vacunas .emergencia-title p {
+  margin-top: 2%;
+}
+.contacto-vacunas .grid-formas__contacto {
+  margin-top: 3%;
+  display: grid;
+  grid-area: grid-formas__contacto;
+  gap: 5% 2%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "llamada chat" "video mensaje";
+}
+.contacto-vacunas .grid-formas__contacto .contacto {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contacto-vacunas .grid-formas__contacto .contacto p {
+  color: #5465ff;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.contacto-vacunas .grid-formas__contacto .contacto a {
+  color: #000000;
+  transition: all 2s;
+  min-width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.contacto-vacunas .grid-formas__contacto .contacto a:hover {
+  background-color: #5465ff;
+}
+.contacto-vacunas .grid-formas__contacto .contacto a img {
+  display: flex;
+  margin: auto;
+}
+.contacto-vacunas .grid-formas__contacto .llamada {
+  grid-area: llamada;
+}
+.contacto-vacunas .grid-formas__contacto .chat {
+  grid-area: chat;
+}
+.contacto-vacunas .grid-formas__contacto .video {
+  grid-area: video;
+}
+.contacto-vacunas .grid-formas__contacto .mensaje {
+  grid-area: mensaje;
+}
+.contacto-vacunas .photo-contacto {
+  grid-area: photo-contacto;
+}
+
+.photo-contacto {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .contacto-vacunas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contacto-vacunas .emergencia-title {
+    max-width: 100%;
+    margin: 2% 0;
+  }
+  .grid-formas__contacto {
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+  .grid-formas__contacto .contacto img {
+    display: flex;
+    margin: auto;
+  }
+  .photo-contacto {
+    max-width: 100%;
+  }
+  .photo-contacto img {
+    max-width: 100%;
+  }
+}
+.footer-vacunacion {
+  display: grid;
+  margin-top: 5%;
+  max-width: 100%;
+  background-color: #5465ff;
+  color: #ffffff;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "logo-info__extra soporte-footer" "derechos      derechos";
+}
+.footer-vacunacion .logo-info__extra {
+  grid-area: logo-info__extra;
+}
+.footer-vacunacion .logo-info__extra h3 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.footer-vacunacion .soporte-footer {
+  grid-area: soporte-footer;
+}
+.footer-vacunacion .soporte-footer h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.footer-vacunacion .soporte-footer a {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.footer-vacunacion .derechos {
+  max-width: 100%;
+  grid-area: derechos;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=footer.css.map */

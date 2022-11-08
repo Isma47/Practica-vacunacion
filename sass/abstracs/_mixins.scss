@@ -1,0 +1,7 @@
+@mixin flex ($dis, $align-i, $justify-c, $flex-d, $f-wrap) {
+    display: $dis;
+    align-items: $align-i;
+    justify-content: $justify-c;
+    flex-direction: $flex-d;
+    flex-wrap: $f-wrap;
+}

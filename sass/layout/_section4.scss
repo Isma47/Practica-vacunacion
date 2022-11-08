@@ -1,0 +1,125 @@
+@use "./../abstracs/mixins" as *;
+@use "./../abstracs/variables" as *;
+
+//Inicio del section 4
+.contacto-vacunas {
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "emergencia-title emergencia-title"
+    "grid-formas__contacto photo-contacto";
+
+  //Title e info de la seccion
+
+  .emergencia-title {
+    grid-area: emergencia-title;
+    max-width: 45%;
+    text-align: left;
+
+    h2 {
+      color: $color-1;
+    }
+    p {
+      margin-top: 2%;
+    }
+  }
+
+  .grid-formas__contacto {
+    margin-top: 3%;
+    display: grid;
+    grid-area: grid-formas__contacto;
+    gap: 5% 2%;
+    //Grid interior de las dormas de contacto
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "llamada chat"
+    "video mensaje";
+
+
+    .contacto {
+        max-width: 100%;
+        @include flex(flex, center, center, column, wrap);
+        p {
+            color: $color-1;
+            font:{
+                size:1rem;
+                weight: bolder;
+            }
+        }
+
+        a {
+            color: $colornegro;
+            transition: all 2s;
+            min-width: 80%;
+            text-align: center;
+            border-radius: 10px;
+            font: {
+                size:.9rem;
+                weight:bold;
+            }
+            &:hover {
+                background-color: $color-1;
+            }
+            img {
+                display: flex;
+                margin: auto;
+            }
+        }
+    }
+    .llamada{
+        grid-area: llamada;
+    }
+
+    .chat {
+        grid-area: chat;
+    }
+
+    .video {
+        grid-area: video;
+    }
+
+    .mensaje {
+        grid-area: mensaje;
+    }
+  }
+  .photo-contacto {
+    grid-area: photo-contacto;
+  }
+}
+
+.photo-contacto {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .contacto-vacunas {
+        @include flex(flex, center, center, column, wrap);
+
+        .emergencia-title {
+            max-width: 100%;
+            margin: 2% 0;
+        }
+    }
+
+
+    .grid-formas__contacto {
+        max-width: 100%;
+        margin-bottom: 5%;
+        .contacto {
+            img {
+                display: flex;
+                margin: auto;
+            }
+        }
+    }
+
+    .photo-contacto {
+        max-width: 100%;
+        img {
+            max-width: 100%;
+        }
+    }
+}

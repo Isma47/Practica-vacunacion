@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacunacion</title>
+    <!-- Header -->
+    <link rel="stylesheet" href="css/header.css" />
+    <!-- Main -->
+    <!-- Section 1 -->
+    <link rel="stylesheet" href="css/section1.css" />
+    <!-- Section 2 -->
+    <link rel="stylesheet" href="css/section2.css" />
+    <!-- Section 3 -->
+    <link rel="stylesheet" href="css/section3.css" />
+    <!-- Section 4 -->
+    <link rel="stylesheet" href="css/section4.css" />
+    <!-- Footer  -->
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+
+  <body>
+    <!-- Inicio del header -->
+    <header class="header-logo__nav">
+      <!-- Logo -->
+      <section class="header-logo">
+        <p>Vacunación</p>
+      </section>
+
+      <!-- Barra de navegaciòn -->
+      <nav class="header-navbar">
+        <a href="#registro">Registro</a>
+        <a href="#info">Informaciòn</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#help">Ayuda</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Primera seccion -->
+
+      <section class="main-vacunarse">
+        <!-- Title màs informacion para sobre las vacunas-->
+
+        <article class="title-info__vacunacion">
+          <!-- Titulo -->
+          <h1>Para poder terminar con la pandemia. ¡Debemos vacunarnos!</h1>
+
+          <!-- Informacion -->
+          <p>
+            Para poder terminar con esta pandemia y volver a nuestra vida
+            habitual, necesitamos vacunarnos. Por favor, acude a tu centro de
+            vacunación más cercano para aplicarte tu dosis
+          </p>
+
+          <!-- Seleccionar vacunas -->
+          <!-- Link info de las efectividad -->
+          <div class="info-proteccionvacuna">
+            <span>
+              <img src="svg/like.svg" alt="" />
+              <a href="">Protección segura</a>
+            </span>
+            <!-- Link info sobre vacunas que puedes elegir -->
+            <span>
+              <img src="svg/star.svg" alt="" />
+              <a href="">Seleccionar vacuna</a>
+            </span>
+          </div>
+        </article>
+
+        <!-- Imagen sobre la vacunaciòn -->
+        <article class="photo-vacunacion">
+          <img src="img/vacunacion  header.jpg" alt="" />
+        </article>
+
+        <!-- Recomendacion de centro de vacunación más cercano -->
+
+        <article class="recomendacion-sede" id="registro">
+          <!-- Recomendacio -->
+          <span>
+            <img src="svg/time.svg" alt="" />
+            Recomendación de centro de vacunacion más cercano
+          </span>
+
+          <!-- Form con datos de cita y centro de vacunacion cercano -->
+          <form class="cita-recomenacion">
+            <!-- Localizacion -->
+            <label for="ubicacion">
+              <span> <img src="svg/ubicacion.svg" alt="" /></span>
+              Ubicación</label
+            >
+
+            <select name="ubicacion" id="ubicacion">
+              <!-- Opcion 1 -->
+              <option value="parqueneza">Parque del pueblo CD NEZA</option>
+              <!-- Opcion 2 -->
+              <option value="palacio">Palacio Municipal CD NEZA</option>
+              <!-- Opcion 3 -->
+              <option value="Centrosalud">Centro de salud Pirules</option>
+            </select>
+
+            <!-- Fecha -->
+            <label for="fecha">Elige una Fecha</label>
+            <input
+              type="date"
+              name="fecha"
+              min="2022-04-01"
+              max="2022-12-30"
+              class="fecha-form"
+            />
+
+            <!-- Vacuna -->
+            <label for=""
+              ><span><img src="svg/vacuna.svg" alt="bday" /></span>Elige tu
+              vacuna</label
+            >
+
+            <select name="" id="">
+              <option value="moderna">Moderna</option>
+              <option value="pfizer">Pfizer</option>
+              <option value="sputnik">Sputnik V</option>
+              <option value="cansino">Cansino</option>
+            </select>
+          </form>
+        </article>
+      </section>
+
+      <!-- Seccion 2 de la pagina, informacion  sobre las vacunas -->
+      <section class="section2-info__vacunas" id="info">
+        <article class="info-vacunas">
+          <h2>¿Porqué debo vacunarme?</h2>
+
+          <p>
+            Para evitar cualquier duda sobre la vacunación conra el COVID-19, te
+            prensentaremos los 4 beneficios contra el COVID-19
+          </p>
+        </article>
+
+        <article class="flex-beneficios__info">
+          <!-- Beneficio 1 -->
+          <div class="beneficio-1 beneficio">
+            <img src="svg/beneficio1.svg" alt="" />
+
+            <h2>Minimizar la propagación del virus</h2>
+            <p>
+              La vacunación ha demostrado su eficacia para evitar que alguien se
+              infecte con el coronavirus
+            </p>
+          </div>
+
+          <!-- Beneficio 2 -->
+          <div class="beneficio-2 beneficio">
+            <img src="svg/anticuerpos.svg" alt="" />
+
+            <h2>Formacion de anticuerpos</h2>
+            <p>
+              La vacuna COVID-19 probaba para ayudar dar forma a la respuesta de
+              anticuerpos para el sistema inmunulogico
+            </p>
+          </div>
+
+          <!-- Benefico 3 -->
+          <div class="beneficio-3 beneficio">
+            <img src="svg/proteccion.svg" alt="" />
+
+            <h2>Proteger a las personas cercanas</h2>
+            <p>
+              Los beneficios de la vacunación como al COVID-19 son que la vacuna
+              que recibimos tambien pude ayudar a proteger a las personas que
+              nos rodean
+            </p>
+          </div>
+
+          <!-- Beneficio 4 -->
+          <div class="beneficio-4 beneficio">
+            <img src="svg/family.svg" alt="" />
+
+            <h2>Regresar de nuevo a tus actividades cotidianas</h2>
+            <p>
+              Hemos restringido las actividades familiares gracias a la
+              pandemia, si todos nos vacunamos y la tasa de contagios baje
+              consideradamente, estaremos listos para volver a reunirnos.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Inicio del section 3 -->
+
+      <section class="preparativos-vacuna" id="noticias">
+        <!-- Photo de la derecha -->
+        <div class="photo-preparativos">
+          <img src="img/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg" alt="" />
+        </div>
+
+        <!-- Infor de preparativos de las vacunas -->
+
+        <div class="preparativos-vacuna__info">
+          <h2>Preparativos de la vacuna</h2>
+          <p>
+            El exito de las vacunas esta fuertemente influenciado por la
+            fortaleza del sistema inmunulogico del cuerpo. Por lo tanto hay
+            varias cosas que pueden intentar para que la vacuna contra el
+            COVID-19 funcione.
+          </p>
+
+          <!-- Restricciones -->
+          <div class="preparativos-restricciones">
+            <ul>
+              <li>Evite las bebidas alcohólicas</li>
+              <li>Evite el estres</li>
+              <li>Comer comida sana</li>
+              <li>Dormir lo suficiente</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="contacto-vacunas"id="help">
+        <!-- contaxto de emergencia -->
+        <div class="emergencia-title">
+          <h2>Contacto de emergencia</h2>
+          <p>
+            Comuniquese con uno de los contactos a continuaciòn si usted o su
+            familia se sienten mal y tienen sintomas similare, como los de
+            COVID-19, asegurese tambien de informarnos
+          </p>
+        </div>
+
+        <!-- Formas de contacto -->
+        <div class="grid-formas__contacto">
+          <!-- Contacto 1 -->
+          <article class="contacto llamada">
+            <div>
+              <img src="svg/tel.svg" alt="" />
+              <p>Llamada</p>
+            </div>
+            <a href="" class="contactar">LLAMA AHORA</a>
+          </article>
+          <!-- Contacto 2 -->
+          <article class="contacto chat">
+            <div>
+              <img src="mensaje.svg" alt="" />
+              <p>Chatea</p>
+            </div>
+            <a href="">CHATEA AHORA</a>
+          </article>
+          <!-- Contacto 3 -->
+          <article class="contacto video">
+            <div>
+              <img src="svg/videocall.svg" alt="" />
+              <p>Video llamada</p>
+            </div>
+            <a href="">VIDEO LLAMADA AHORA</a>
+          </article>
+          <!-- Contacto 4 -->
+          <article class="contacto mensaje">
+            <div>
+              <img src="svg/mensaje.svg" alt="" />
+              <p>Mensaje</p>
+            </div>
+            <a href="">MENSAJE AHORA</a>
+          </article>
+        </div>
+
+        <!-- Imagne del lado derecho -->
+        <div class="photo-contacto">
+          <img
+            src="img/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- Inicio del footer -->
+    <footer class="footer-vacunacion">
+      <!-- Logo con infomacion extra -->
+      <article class="logo-info__extra">
+        <h3>Vacunacion</h3>
+        <p>Our gola is to help the world free from the ongoing pandemic</p>
+      </article>
+
+      <article class="soporte-footer">
+        <div class="about-footer ">
+          <h2>About</h2>
+          <a href="">About Us</a>
+          <a href="">Features</a>
+          <a href="">News & blog</a>
+        </div>
+        <div class="company-footer">
+          <h2>Company</h2>
+          <a href="">How We work?</a>
+          <a href="">Capital</a>
+          <a href="">Security</a>
+        </div>
+        <div class=" support-footer">
+          <h2>Support</h2>
+          <a href="">FAQs</a>
+          <a href="">Support Center</a>
+          <a href="">Contact Us</a>
+        </div>
+      </article>
+
+      <article class="derechos">
+        <p>@2022 vecunacion. Derechos reservados</p> 
+
+        <p>Terminos y condiciones</p>
+     </article>
+    </footer>
+  </body>
+</html>

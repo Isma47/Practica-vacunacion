@@ -1,0 +1,49 @@
+@use './../abstracs/mixins' as *;
+@use './../abstracs/variables' as *;
+
+//Inicio del header
+.header-logo__nav{
+    max-width: 100%;
+    @include flex(flex, center, space-around, row, wrap);
+    background-color: $color-1;
+    //Logo
+    .header-logo {
+        font: {
+            size: 2rem;
+            weight: bolder;
+        }
+
+    }
+
+    .header-navbar {
+        min-width: 45%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            transition:  all 1s;
+            font: {
+                size: 1.1rem;
+                weight: bold;
+            }
+            &:hover {
+                color: $colornegro;
+            }
+            color: $colorblanco;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-logo__nav{
+        max-width: 100%;
+        @include flex(flex, center, space-around, column, wrap);
+        background-color: $color-1;
+    
+        .header-navbar {
+            @include flex(flex, center, center, column, wrap);
+            max-width: 100%;
+            margin: 2% 0%;
+        }
+    }
+}
